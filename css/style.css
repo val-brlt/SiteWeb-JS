@@ -1,0 +1,355 @@
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto_condensedlight', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/Roboto-Medium-webfont.eot');
+    src: url('Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('Roboto-Medium-webfont.woff2') format('woff2'), url('Roboto-Medium-webfont.woff') format('woff'), url('Roboto-Medium-webfont.ttf') format('truetype'), url('Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condensedlight';
+    src: url('RobotoCondensed-Light-webfont.eot');
+    src: url('RobotoCondensed-Light-webfont.eot?#iefix') format('embedded-opentype'), url('RobotoCondensed-Light-webfont.woff2') format('woff2'), url('RobotoCondensed-Light-webfont.woff') format('woff'), url('RobotoCondensed-Light-webfont.ttf') format('truetype'), url('RobotoCondensed-Light-webfont.svg#roboto_condensedlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* NAV BAR */
+
+.topbar {
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 0 60px;
+    font-weight: bold;
+    border-bottom: 1px solid #bababa;
+}
+
+.nav {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #505050;
+    border-right: 1px solid #bababa;
+    font-family: 'robotomedium', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav a:hover {
+    background-color: #EEEEEE;
+}
+
+.fixed-nav {
+    position: fixed;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+.logo {
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
+
+/* FIN NAV BAR */
+
+
+/* CSS ELEMS */
+
+.header {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: all 0.2s;
+}
+
+.header p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 50px 0 50px;
+    font-style: italic;
+    transition: all 0.2s;
+}
+
+.header p:hover {
+    transform: translateX(3px);
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+.formations,
+.pro,
+.comp {
+    height: auto;
+    /* SI NAV BAR ERREUR ! */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(143, 143, 143, 0.555);
+}
+
+h1 {
+    height: 80px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+}
+
+.elems_ul {
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.elems_li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elems_comp {
+    width: 300px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 0 20px 0 20px;
+    background-color: rgb(218, 218, 218);
+}
+
+.elems_ul img {
+    width: 150px;
+    height: 100px;
+    margin-top: 20px;
+    align-self: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.elem_item_port {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #636e72;
+    opacity: 0.8;
+    transition: all 0.2s;
+    transform: scale(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay a {
+    text-decoration: none;
+    font-family: 'Open-Sans-Bold';
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    background: white;
+    color: #636e72;
+}
+
+.overlay a:hover {
+    background: rgb(211, 211, 211);
+}
+
+.overlay p {
+    font-family: 'Open-Sans-Bold';
+    color: white;
+}
+
+.elem_item_port:hover .overlay {
+    transform: scale(1);
+}
+
+.front {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    display: flex;
+}
+
+.front img {
+    width: 250px;
+    height: 300px;
+}
+
+.elems_port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_contact h2 {
+    font-size: 50px;
+}
+
+.container_contact p {
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    border: solid 2px black;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.github {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.github a {
+    color: black;
+}
+
+.github img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+/* FIN CSS ELEMS */
+
+
+/* DEBUT CSS FOOTER */
+
+@font-face {
+    font-family: 'Open-Sans-Bold';
+    src: url('../fonts/Open-Sans-Bold.ttf.woff') format('woff'), url('../fonts/Open-Sans-Bold.ttf.svg#Open-Sans-Bold') format('svg'), url('../fonts/Open-Sans-Bold.ttf.eot'), url('../fonts/Open-Sans-Bold.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    align-self: flex-end;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(82, 82, 82);
+    bottom: 0;
+}
+
+.f_port {
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 30px;
+    color: white;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+}
+
+.button_s,
+.button_e {
+    font-size: 1em;
+    font-family: 'Open-Sans-Bold';
+}
+
+.button_link a {
+    margin-right: 30px;
+}
+
+.button_e {
+    color: white;
+    background-color: rgb(0, 123, 182);
+    border-radius: 1px;
+    padding: 0px 2px;
+    margin-left: 1px;
+}
+
+.button_s {
+    color: black;
+}
+
+.button_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 197, 197);
+    border-radius: 2px;
+    box-shadow: 2px 1px 2px black;
+    height: 30px;
+    width: 80px;
+    transition: 0.3s;
+    margin-right: 40px;
+}
+
+.button_link:hover {
+    background-color: rgb(145, 145, 145);
+}
+
+
+/* FIN CSS FOOTER */
