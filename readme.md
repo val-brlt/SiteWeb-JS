@@ -1,5 +1,7 @@
 Création d'un site Web CV + Portfolio en Javascript
 
+lien : https://val-brlt.github.io/SiteWeb-JS/
+
 v1 :  
 
 - Page HTML ✔️  
@@ -10,7 +12,7 @@ Futur v1.1 :
 
 - Update de la page contact et portfolio ❌  
 
-*  
+all*  
 - Modification du menu pour téléphone en responsive ❌  
 
 index.html    
